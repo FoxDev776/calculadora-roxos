@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora Ilegal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🧮 Calculadora de Venda de Maconha</h1>
+    
+    <label for="quantidade">Quantidade vendida:</label>
+    <input type="number" id="quantidade" placeholder="Ex: 200">
+
+    <label>
+      <input type="checkbox" id="parceria"> Venda com parceria (R$500 cada)
+    </label>
+
+    <label>
+      <input type="checkbox" id="farmFeito"> Fez o farm semanal (90% pra ele)
+    </label>
+
+    <label>
+      <input type="checkbox" id="farmNaoFeito"> Não fez o farm (50% / 50%)
+    </label>
+
+    <button onclick="calcular()">Calcular</button>
+
+    <div id="resultado" class="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
